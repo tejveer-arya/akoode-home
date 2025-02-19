@@ -215,31 +215,77 @@ $('.case-slider-widget').owlCarousel({
   }
 });
 
+$('.casestudy-widget').owlCarousel({
+  loop:true,
+  margin:30,
+  nav:true,
+  dots:false,
+  items:10,
+  navText:["<i class='fa-solid fa-angle-left'></i>","<i class='fa-solid fa-angle-right'></i>"],
+  autoplay:true,
+  smartSpeed:1500,
+  autoplayTimeout:3000,
+  responsiveClass:true,
+  responsive:{
+  0:{
+    items:1,                
+  },
+  600:{
+    items:1,
+  },
+  1000:{
+    items:1,
+  }
+  }
+});
+
 // testimonial//
  $('.slider-galeria').slick({
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  arrows: true,
-  infinite: false,
-  infinite:true,
-  asNavFor: '.slider-galeria-thumbs',
-  prevArrow: $('.testimonial-next-arrow'),
-  nextArrow: $('.testimonial-prev-arrow'),
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    autoplay: true,
+    autoplaySpeed: 2000,
 });
-$('.slider-galeria-thumbs').slick({
-  slidesToShow: 4,
-  slidesToScroll: 1,
-  items:15,
-  arrows: true,
-  asNavFor: '.slider-galeria',
-  vertical: true,
-  infinite:true,
-  verticalSwiping: true,
-  focusOnSelect: true,
-  infinite: false,
-  prevArrow: $('.testimonial-next-arrow'),
-  nextArrow: $('.testimonial-prev-arrow'),
+
+$('.video-galeria').owlCarousel({
+  loop:true,
+  margin:30,
+  nav:true,
+  dots:false,
+  items:1,
+  navText:["<i class='fa-solid fa-angle-left'></i>","<i class='fa-solid fa-angle-right'></i>"],
+  autoplay:false,
+  smartSpeed:3000,
+  autoplayTimeout:3000,
+  responsiveClass:true,
+  responsive:{
+  0:{
+    items:1,                
+  },
+  600:{
+    items:1,
+  },
+  1000:{
+    items:1,
+  }
+  }
 });
+
+// $('.slider-galeria-thumbs').slick({
+//   slidesToShow: 4,
+//   slidesToScroll: 1,
+//   items:15,
+//   arrows: true,
+//   asNavFor: '.slider-galeria',
+//   vertical: true,
+//   infinite:true,
+//   verticalSwiping: true,
+//   focusOnSelect: true,
+//   infinite: false,
+//   prevArrow: $('.testimonial-next-arrow'),
+//   nextArrow: $('.testimonial-prev-arrow'),
+// });
 
 // testimonial //
 $('.testimonial4-slider').owlCarousel({
@@ -267,33 +313,33 @@ $('.testimonial4-slider').owlCarousel({
 });
 
 // testimonial //
-$(document).ready(function(){
-$('.casestudy-widget').owlCarousel({
-  loop:true,
-  autoHeight: true,
-  margin:30,
-  nav:true,
-  dots:false,
-  items:4,
-  navText:["<i class='fa-solid fa-angle-left'></i>","<i class='fa-solid fa-angle-right'></i>"],
-  autoplay:false,
-  // autoplay:true,
-  smartSpeed:1500,
-  autoplayTimeout:3000,
-  responsiveClass:true,
-  responsive:{
-  0:{
-    items:1,                
-  },
-  600:{
-    items:1,
-  },
-  1000:{
-    items:1,
-  }
-  }
-});
-});
+// $(document).ready(function(){
+// $('.casestudy-widget').owlCarousel({
+//   loop:true,
+//   autoHeight: true,
+//   margin:30,
+//   nav:true,
+//   dots:false,
+//   items:4,
+//   navText:["<i class='fa-solid fa-angle-left'></i>","<i class='fa-solid fa-angle-right'></i>"],
+//   autoplay:false,
+//   autoplay:true,
+//   smartSpeed:1500,
+//   autoplayTimeout:3000,
+//   responsiveClass:true,
+//   responsive:{
+//   0:{
+//     items:1,                
+//   },
+//   600:{
+//     items:1,
+//   },
+//   1000:{
+//     items:1,
+//   }
+//   }
+// });
+// });
 
 // testimonial //
 $('.service5-slider-box').owlCarousel({
